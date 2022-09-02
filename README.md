@@ -88,3 +88,10 @@ function toggleModal() {
 refs.modal.classList.toggle("is-hidden");
 }
 })();
+
+Вітаю!)
+
+1. Для .contact-icon приберіть анімацію ✅
+2. Для .contact-link анімуйте ще fill ✅
+3. Для .portfolio-link додайте анімацію для тіней ✅
+   Очікую роботу з виправленнями)

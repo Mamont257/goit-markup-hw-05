@@ -91,7 +91,7 @@ img {
 body {
     background-color: var(--global-color);
     font-family: var(--primary-font);
-    margin: 0px;                        
+    margin: 0px; 
 }
 
 
@@ -182,7 +182,8 @@ body {
 
     fill: var(--second-text-color);
 
-    transition: color var(--animation);
+    transition: color var(--animation), 
+    fill var(--animation);
 }
 
 .contact-link:hover,
@@ -193,8 +194,6 @@ body {
 
 .contact-icon {
     margin-right: 10px;
-
-    transition: fill var(--animation);
 }
 
 /* .mail::before {
@@ -757,6 +756,8 @@ body {
 
 .portfolio-link {
     display: block;
+
+    transition: box-shadow var(--animation);
 }
 
 .portfolio-link:hover {
@@ -855,6 +856,7 @@ body {
     animation-iteration-count: 1;
     animation-direction: alternate;
     animation-fill-mode: forwards; */
+    
 
     transition: all var(--animation);
 }
@@ -901,16 +903,16 @@ body {
 
 /* @keyframes animation-modal {
     0% {
-        /* transform: rotate(0deg); */
-        /* opacity: 0; */
-        /* transform: scaleY(0.75); */
-        /* width: 0%; *
+        transform: rotate(0deg);
+        opacity: 0;
+        transform: scaleY(0.75);
+        width: 0%;
         transform: translateY(-100%);
     }
     100% {
-        /* transform: rotate(360deg); */
-        /* opacity: 1; */
-        /* transform: scaleY(1); */
-        /* width: 100%; *
+        transform: rotate(360deg);
+        opacity: 1;
+        transform: scaleY(1);
+        width: 100%;
         transform: translateY(100%);
 } */
