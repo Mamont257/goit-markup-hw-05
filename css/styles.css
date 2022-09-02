@@ -159,7 +159,6 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    /* display: block; */
 
     color: var(--text-color);
 
@@ -848,8 +847,23 @@ body {
     height: 100%;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.2);
-    /* opacity: 0; */
+    /* opacity: 1; */
+
+    /* animation-name: animation-modal;
+    animation-duration: 2500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+
+    transition: all var(--animation);
 }
+
+/* .backdrop:hover {
+    transform: rotate(360deg);
+    opacity: 1;
+    transform: scale(0.75);
+} */
 
 .modal {
     position: absolute;
@@ -859,8 +873,6 @@ body {
     height: 581px;
     transform: translate(-50%, -50%);
     background-color: var(--global-color);
-
-    
 }
 
 .modal-close-btn {
@@ -878,7 +890,6 @@ body {
     justify-content: center;
     padding: 0;
 
-    
 }
 
 .backdrop.is-hidden {
@@ -888,3 +899,18 @@ body {
 
 }
 
+/* @keyframes animation-modal {
+    0% {
+        /* transform: rotate(0deg); */
+        /* opacity: 0; */
+        /* transform: scaleY(0.75); */
+        /* width: 0%; *
+        transform: translateY(-100%);
+    }
+    100% {
+        /* transform: rotate(360deg); */
+        /* opacity: 1; */
+        /* transform: scaleY(1); */
+        /* width: 100%; *
+        transform: translateY(100%);
+} */
